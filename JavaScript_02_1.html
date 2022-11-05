@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java Script Lesson 2</title>
+    
+    </head>
+    <body>
+        <script>
+            "use strict";
+            var a = 2, b = 5;
+            var result = (a + b < 4) ? 'Мало' : 'Багато';
+            alert(result);
+
+            var login = prompt('Вкажіть логін (Вася, Директор і т.п.)', '');
+            var message = (login == 'Вася') ? 'Привіт' :
+                (login == 'Директор') ? 'Будьте здорові' :
+                (login == '') ? 'Немає логіна' : '';
+            alert(message);
+
+            var A = 3, B = 16, S = 0;
+            while(A <= B){
+                S += A;
+                if(A % 2 == 1){
+                    document.writeln(A);
+                }
+                A++;
+            }
+            document.writeln(S);
+        </script>  
+    </body>

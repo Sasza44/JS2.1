@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java Script Lesson 2</title>
+    
+    </head>
+    <body>
+        <script>
+            "use strict";
+
+            let drawing1 = '';
+            for(let i = 1; i < 8; i++){
+                for(let j = 1; j < 18; j++){
+                    drawing1 += ' *';
+                }
+                drawing1 += '<br>';
+            }
+            document.write(drawing1);
+
+            let drawing2 = '';
+            let j1 = 1;
+            for(let i = 1; i < 13; i++){
+                for(let j = 1; j < j1; j++){
+                    drawing2 += '*';
+                }
+                drawing2 += '<br>';
+                j1++;
+            }
+            document.write(drawing2);
+
+            let drawing3 = '';
+            let i1 = 11;
+            let j2 = i1;
+            for(let i = 1; i < i1; i++){
+                for(let j = 1; j < j2; j++){
+                    if(j < (j2 - (i - 1) * 2) - 1){
+                        drawing3 += '_';
+                    }
+                    else{
+                        drawing3 += '*';
+                    }
+                }
+                drawing3 += '<br>';
+                j2++;
+            }
+            document.write(drawing3);
+            
+            let drawing4 = '';
+            let i2 = 7;
+            let j3 = i2;
+            for(let i = 1; i < i2; i++){
+                for(let j = 1; j < j3; j++){
+                    if(j < (j3 - (i - 1) * 2) - 1){
+                        drawing4 += '_';
+                    }
+                    else{
+                        drawing4 += '*';
+                    }
+                }
+                drawing4 += '<br>';
+                j3++;
+            }
+            let j4 = (i2 - 1) * 2 - 1;
+            for(let i = 1; i < i2 - 1; i++){
+                for(let j = 1; j < j4; j++){
+                    if(j <= i){
+                        drawing4 += '_';
+                    }
+                    else{
+                        drawing4 += '*';
+                    }
+                }
+                drawing4 += '<br>';
+                j4--;
+            }
+            document.write(drawing4);
+        </script>  
+    </body>
